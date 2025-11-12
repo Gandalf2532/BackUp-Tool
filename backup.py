@@ -5,7 +5,7 @@ def backupfolder_and_zip(source, target, zipname):
     files_in_dir = []
     for r, d, f in os.walk(source):
        for item in f:
-       files_in_dir.append(os.path.join(r,item))
+           files_in_dir.append(os.path.join(r,item))
 
     os.makedirs(target, exist_ok=True)
 
